@@ -164,8 +164,8 @@ public class dbload {
         LocalDateTime dateTime = LocalDateTime.of(year, month, mdate, time, 0);
 
         /* transfer primitive type to bytes */
-        byte[] dateTimeBytes = dateTime.format(DATE_TIME_FORMATTER).getBytes();
         byte[] idBytes = intToByteArray(id);
+        byte[] dateTimeBytes = dateTime.format(DATE_TIME_FORMATTER).getBytes();
         byte[] yearBytes = intToByteArray(year);
         byte[] sensorIdBytes = intToByteArray(sensorId);
         byte[] hourlyCountsBytes = intToByteArray(hourlyCounts);
